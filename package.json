@@ -1,0 +1,39 @@
+{
+    "name": "comprehensive-whatsapp-bot",
+    "version": "1.0.0",
+    "description": "A comprehensive, modular WhatsApp Bot",
+    "main": "index.js",
+    "type": "module",
+    "directories": {
+        "lib": "src",
+        "plugins": "plugins"
+    },
+    "scripts": {
+        "start": "node index.js",
+        "test": "node test.js",
+        "lint": "eslint ."
+    },
+    "keywords": [
+        "whatsapp",
+        "bot",
+        "baileys",
+        "node"
+    ],
+    "author": "User",
+    "license": "ISC",
+    "dependencies": {
+        "@hapi/boom": "^10.0.1",
+        "@whiskeysockets/baileys": "^6.7.8",
+        "awesome-phonenumber": "^2.64.0",
+        "axios": "^1.6.2",
+        "chalk": "^5.3.0",
+        "express": "^4.18.2",
+        "file-type": "^18.7.0",
+        "moment-timezone": "^0.5.43",
+        "pino": "^8.17.2",
+        "qrcode-terminal": "^0.12.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.56.0"
+    }
+}

@@ -1,0 +1,42 @@
+{
+  "users": {},
+  "chats": {
+    "818029353784@s.whatsapp.net": {
+      "jid": "818029353784@s.whatsapp.net",
+      "isBanned": false,
+      "welcome": true,
+      "antiArab": false,
+      "detect": true,
+      "antiLink": false,
+      "sWelcome": "",
+      "sBye": "",
+      "sPromote": "",
+      "sDemote": ""
+    },
+    "120363423116757251@g.us": {
+      "jid": "120363423116757251@g.us",
+      "isBanned": false,
+      "welcome": true,
+      "antiArab": false,
+      "detect": true,
+      "antiLink": false,
+      "sWelcome": "",
+      "sBye": "",
+      "sPromote": "",
+      "sDemote": ""
+    },
+    "120363400740164403@g.us": {
+      "jid": "120363400740164403@g.us",
+      "isBanned": false,
+      "welcome": true,
+      "antiArab": false,
+      "detect": true,
+      "sWelcome": "",
+      "sBye": "",
+      "sPromote": "",
+      "sDemote": ""
+    }
+  },
+  "stats": {},
+  "settings": {}
+}

@@ -1,0 +1,19 @@
+{
+    "name": "WhatsApp Bot",
+    "description": "A comprehensive modular WhatsApp Bot",
+    "logo": "https://github.com/github.png",
+    "keywords": [
+        "whatsapp",
+        "bot",
+        "node",
+        "baileys"
+    ],
+    "repository": "https://github.com/user/repo",
+    "stack": "container",
+    "env": {
+        "PORT": {
+            "description": "Port for web server",
+            "value": "3000"
+        }
+    }
+}

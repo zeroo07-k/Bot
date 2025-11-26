@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Bot - Status</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #075e54;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+
+        .status {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #25d366;
+            color: white;
+            border-radius: 25px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .info {
+            background: #f0f2f5;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .info p {
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">💬</div>
+        <h1>WhatsApp Bot</h1>
+        <div class="status pulse">🟢 Running</div>
+
+        <div class="info">
+            <p><strong>Status:</strong> Active</p>
+            <p><strong>Version:</strong> 1.0.0</p>
+            <p><strong>Platform:</strong> Node.js + Baileys</p>
+        </div>
+
+        <p style="margin-top: 20px; color: #888; font-size: 14px;">
+            Bot is ready to receive commands
+        </p>
+    </div>
+
+    <script>
+        // Fetch status from API
+        fetch('/api/status')
+            .then(res => res.json())
+            .then(data => {
+                console.log('Bot Status:', data)
+            })
+            .catch(err => console.error('Error fetching status:', err))
+    </script>
+</body>
+
+</html>
